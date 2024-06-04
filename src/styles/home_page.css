@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    padding: 30px 50px 30px 50px;
+    padding: 2% 8% 0% 8%;
     height: 30px;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .banner img {
-    width: 100%;
+    width: 90%;
     object-fit: cover;
     height: 12rem;
     border-radius: 10px;
@@ -83,23 +83,39 @@
 }
 
 .card-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 55px;
     background-color: #F6F6F6;
     border-radius: 20px;
     margin-top: 50px;
+    margin-left: 60px;
     box-sizing: border-box;
-    padding: 30px;
+    padding: 5% 5% 5% 7%;
+    width: 90%;
 }
+
 .card-section a {
+    display: flex;
     text-decoration: none;
     color: #F6F6F6;
+
 }
 .card {
-    width: 240px;
-    height: 240px;
+    width: 320px;
+    height: 320px;
     display: flex;
     background-color: #FF6060;
     box-sizing: border-box;
     border-radius: 5px;
+    vertical-align: bottom;
     
+}
+
+.card-section p {
+    align-content: end;
+    width: 100%;
+    padding-left: 10px;
 }
 
