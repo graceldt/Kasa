@@ -1,0 +1,32 @@
+.collapse-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3%;
+}
+
+.collapse{
+    width: 60%;
+    color: #fff;
+    /*background-color: #FF6060;*/
+
+}
+
+
+.toggle{
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+}
+
+.info-collapse{
+    width: 100%;
+    display: flex;
+    color: #fff;
+    background-color: #FF6060;
+    column-gap: 88%;
+}
+.collapse img {
+    justify-content: space-between;
+}
+

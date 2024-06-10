@@ -1,23 +1,26 @@
-import { func } from 'prop-types';
 import Banner from '../components/banner';
 import Card from '../components/card';
-
+import logements from '../data/logement.json'
+import banner from '../assets/Image_source_1.png'
 
 
 function Home() {
 
-    return <>
-        <Banner />
-        <section className='card-section'>  
-            {Array.from({length:6}).map((_,index) =>
-            (
-                <Card key={index}/>
-            ))}        
-           
-        </section>
-    </>
 
-    
+    return <div className='main-page'>
+        <Banner  title="Chez vous, partout et ailleurs" banner={banner}/>
+        <section className='accommodation'>
+        <div className='accommodation-card'>
+            {logements.map((log) =>
+            (
+                <Card key={log.id} title={log.title} image={log.cover} id={log.id} />
+            ))}
+        </div>
+        </section>
+        
+    </div>
+
+
 }
 
 

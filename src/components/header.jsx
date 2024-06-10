@@ -1,4 +1,4 @@
-import '../styles/home_page.css'
+
 import logo from '../assets/LOGO.png'
 
 function HeaderApp() {
