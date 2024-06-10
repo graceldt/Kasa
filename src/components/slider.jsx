@@ -1,7 +1,8 @@
-import logements from '../data/logement.json';
+import "../styles/slider.css";
 import { useState } from "react";
 import arrow_next from '../assets/next.svg'
 import arrow_previous from '../assets/previous.svg'
+
 
 
 const Slider = ({slides}) => {
