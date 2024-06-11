@@ -1,16 +1,35 @@
+import { useParams, useNavigate } from 'react-router';
 import logements from '../data/logement.json'
 import Slider from '../components/slider';
 import Collapse from '../components/collapse';
 import "../styles/accomodation.css";
 import Rating from '../components/rate';
+import { useState, useEffect } from 'react';
 
 
 
 function Accommodation() {
-    const log = logements[1]
+    const {id}= useParams ()
+    const Navigate = useNavigate()
+    const [log, setLogement]= useState(null)
+
+    useEffect(()=>{
+        const foundLogement = logements.find((logement) => logement.id === id)
+
+        setLogement(foundLogement)
+
+        if (!foundLogement){
+            Navigate("/logement-non-trouvé")
+        }
+    }, [id])
+
+
+
+
     return <div className='main-page'>
-        
-        <article>
+        {
+            log !== null &&
+            <article>
             <Slider slides={log.pictures}/>
             <div className='title-host'>
             <span className='title-name'>{log.title}</span>
@@ -38,7 +57,8 @@ function Accommodation() {
                     <p>{log.equipments}</p>
                 </Collapse>
             </div>
-        </article>
+            </article>
+        }
     </div>
 
 }
