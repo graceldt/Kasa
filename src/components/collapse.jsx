@@ -1,6 +1,6 @@
 import { useState } from "react";
-import arrowback from '../assets/arrow_back.svg';
-import arrowtop from '../assets/arrow_2.svg'
+import arrowup from '../assets/arrow_back.svg';
+import arrowdown from '../assets/arrow_2.svg'
 
 
 
@@ -15,12 +15,15 @@ const Collapse =(props)=>{
     
     return(
         <div className="collapse">
-            <span className="info-collapse" onClick={toggle}>{props.label}
+            <div className="info-collapse" onClick={toggle}>{props.label}
+            <span className="arrow-collapse">
             {open ? 
-                <img src={arrowback} className="arrowback" alt="arrowback" /> :
-                <img src={arrowtop} className="arrowback" alt="arrowback" />
+                
+                <img src={arrowup} className="arrowup" alt="arrowup" /> :
+                <img src={arrowdown} className="arrowdown" alt="arrowdown" />
             }
             </span>
+            </div>
             
             {open && 
             <div className="toggle">{props.children}</div>}

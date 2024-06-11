@@ -8,8 +8,6 @@
 .collapse{
     width: 60%;
     color: #fff;
-    /*background-color: #FF6060;*/
-
 }
 
 
@@ -20,13 +18,22 @@
 }
 
 .info-collapse{
-    width: 100%;
+    padding: 10px 0 10px 10px;
     display: flex;
     color: #fff;
     background-color: #FF6060;
-    column-gap: 88%;
-}
-.collapse img {
     justify-content: space-between;
+    border-radius: 10px;
 }
 
+
+.arrow-collapse{
+    display: flex;
+    align-items: end;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.arrow-collapse img {
+    width: 15px;
+}

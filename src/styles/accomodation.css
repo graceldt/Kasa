@@ -27,16 +27,19 @@
 
 .description_more {
     display: flex;
+    gap: 2%;
 }
 
 .tag {
     background-color: #FF6060;
     border-radius: 20px;
     color: white;
+    padding: 2px;
 }
 
 .rating_tag {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1%;
 }
 
