@@ -23,3 +23,9 @@
     right: 2%;
 }
 
+.slider__number{
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    color: white;
+}

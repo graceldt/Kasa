@@ -19,5 +19,8 @@
     bottom: 0%;
     text-decoration: none;
     color: #fff;
+    font-weight: 700;
     padding-left: 5%;
+    line-height: 25px;
+    font-size: 15px;
 }

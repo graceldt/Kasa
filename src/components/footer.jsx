@@ -11,5 +11,4 @@ function FooterApp() {
     
         ;
 }
-
 export default FooterApp;

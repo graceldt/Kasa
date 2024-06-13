@@ -19,8 +19,8 @@ const Collapse =(props)=>{
             <span className="arrow-collapse">
             {open ? 
                 
-                <img src={arrowup} className="arrowup" alt="arrowup" /> :
-                <img src={arrowdown} className="arrowdown" alt="arrowdown" />
+                <img src={arrowdown} className="arrowdown" alt="arrowdown" />:
+                <img src={arrowup} className="arrowup" alt="arrowup" />
             }
             </span>
             </div>

@@ -2,12 +2,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 3%;
+    padding-top: 5%;
 }
 
 .collapse{
     width: 60%;
-    color: #fff;
 }
 
 
@@ -21,15 +20,16 @@
     padding: 10px 0 10px 10px;
     display: flex;
     color: #fff;
+    font-weight: 600;
+    line-height: 25px;
     background-color: #FF6060;
     justify-content: space-between;
     border-radius: 10px;
+    cursor: pointer;
 }
-
 
 .arrow-collapse{
     display: flex;
-    align-items: end;
     padding-right: 10px;
     align-items: center;
 }

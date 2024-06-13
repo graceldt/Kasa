@@ -6,10 +6,12 @@ function HeaderApp() {
             <nav className='nav-bar'>
                 <ul className='menu' >
                     <li className='nav-list'>
-                        <a href='/home'>Accueil</a>
+                        <a href='/home' className={
+                            window.location.pathname === '/home' || window.location.pathname === '/' ? 'active-nav' : 'none'}
+                        >Accueil</a>
                     </li>
                     <li className='nav-list'>
-                        <a href='/about'>A propos</a>
+                        <a href='/about' className={window.location.pathname === '/about' ? 'active-nav' : 'none'}>A propos</a>
                     </li>
                 </ul>
             </nav>
