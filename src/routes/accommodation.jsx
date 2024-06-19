@@ -30,32 +30,34 @@ function Accommodation() {
         {
             log !== null &&
             <article >
-            <Slideshow  slides={log.pictures}/>
-            <div className='title-host'>
-            <span className='title-name'>{log.title}</span>
-            <div className='host-info'>
-                {log.host.name}
-                <img src={log.host.picture} alt={log.host.name}/>
-            </div>
-            </div>
-            <p className='location'>{log.location}</p>
-            <div className='rating_tag'>
-                <div>
-                {
-                    log.tags.map((tag, index) => <span className='tag' key={index}>{tag}</span>)
-                }
+                <Slideshow  slides={log.pictures}/>
+                <div className='title-host'>
+                    <div className='title'>
+                        <span className='title-name'>{log.title}</span>
+                        <p className='location'>{log.location}</p> 
+                    </div>
+                    <div className='host-info'>
+                            {log.host.name}
+                            <img src={log.host.picture} alt={log.host.name}/>
+                    </div>
                 </div>
-                <Rating rating_number={log.rating}/>
-            </div>
-            <div className='description_more'>
-                <Collapse label="Description">
-                    <p>{log.description} </p>
-                </Collapse>
-                <br />
-                <Collapse label="Équipements">
-                    <p>{log.equipments}</p>
-                </Collapse>
-            </div>
+                    <div className='rating_tag'>
+                        <div>
+                        {
+                            log.tags.map((tag, index) => <span className='tag' key={index}>{tag}</span>)
+                        }
+                        </div>
+                        <Rating rating_number={log.rating}/>
+                    </div>
+                    <div className='description_more'>
+                        <Collapse label="Description">
+                            <p>{log.description} </p>
+                        </Collapse>
+                        <br />
+                        <Collapse label="Équipements">
+                            <p>{log.equipments}</p>
+                        </Collapse>
+                    </div>
             </article>
         }
     </div>
