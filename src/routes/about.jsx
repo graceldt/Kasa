@@ -15,7 +15,6 @@ function About() {
         sont régulièrement vérifiées  par nos équipes.
     </p>
     </Collapse>
-    <br />
     <Collapse label="Respect">
     <p className='collapse-content'>
         La bienveillance fait partie des valeurs fondatrices de Kasa.
@@ -23,7 +22,6 @@ function About() {
         entraînera une exclusion de notre plateforme.
     </p>
     </Collapse>
-    <br />
     <Collapse label="Service">
     <p className='collapse-content'>
         La bienveillance fait partie des valeurs fondatrices de Kasa.
@@ -31,7 +29,6 @@ function About() {
         entraînera une exclusion de notre plateforme.
     </p>
     </Collapse>
-    <br />
     <Collapse label="Sécurité">
     <p className='collapse-content'>
         La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes

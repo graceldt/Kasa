@@ -127,11 +127,16 @@ body {
   text-decoration: underline !important;
   text-underline-offset: 6px;
 }
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
   .header-container {
     padding-bottom: 5%;
+  }
+
+  .nav-list .active-nav {
+    text-decoration: none !important;
   }
   
   .banner img {
@@ -150,7 +155,7 @@ body {
 
   .accommodation-card img {
     height: 320px;
-    width: 360px;
+    width: 400px;
   }
 
   

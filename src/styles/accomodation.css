@@ -3,14 +3,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .title{
     display: flex;
     flex-direction: column;
-    width: 55%;
     color: #FF6060;
-    padding-top: 2%;
 }
 
 .title-name {
@@ -20,31 +20,57 @@
     color: #000;
     margin: 0;
     font-size: 18px;
+    margin-top: 20px;
+}
+
+.host {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap : 10px;
 }
 
 
 .host-info {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     font-size: 18px;
     color: #FF6060;
-    gap: 10px;
-    width: 44%;
+    text-align: end;
+    
+}
+
+.host-name{
+    padding-right: 10px;
 }
 
 .host-info img {
     border-radius: 50%;
-    width: 12%;
+    width: 30%;
     vertical-align: middle;
+    row-gap: 20px;
 }
 
+.rating-stars{
+    display: flex;
+    margin-top: 20px;
+}
+
+.rating-stars img {
+    padding-right: 12px;
+}
 
 .description_more {
     display: flex;
-    gap: 2%;
+    justify-content: space-between;
 }
 
+.collapse{
+    width: 48%;
+}
+
+.tag-section{
+    margin-top: 20px;
+    
+}
 .tag {
     background-color: #FF6060; 
     border-radius: 11px;
@@ -55,12 +81,7 @@
     margin-right: 5px;
 }
 
-.rating_tag {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2%;
-    margin-top: 1%;
-}
+
 
 
 /* Small devices (phones, less than 768px) */
@@ -71,17 +92,28 @@
         flex-direction: column;
     }
 
+    .host {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
     .description_more{
-        display: flex;
         flex-direction: column;
+        gap : 10px;
+    }
+
+    .collapse{
+        width: 100%;
+    }
+    .rating-stars  {
+        width: 90%;
+    }
+
+    .title-host {
         width: 100%;
     }
 
-    .rating_tag{
-        display: flex;
-        flex-direction: column;
-    }
-
+    
     .tag {
         border-radius: 8px;
         padding: 5px 10px 5px 10px;
