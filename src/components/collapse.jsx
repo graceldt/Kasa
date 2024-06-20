@@ -1,3 +1,4 @@
+import "../styles/collapse.css";
 import { useState } from "react";
 import arrowup from '../assets/arrow_back.svg';
 import arrowdown from '../assets/arrow_2.svg';

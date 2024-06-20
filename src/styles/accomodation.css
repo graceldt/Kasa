@@ -32,14 +32,14 @@
 
 
 .host-info {
-    font-size: 18px;
+    font-size: 17px;
     color: #FF6060;
     text-align: end;
     
 }
 
 .host-name{
-    padding-right: 10px;
+    padding-right: 2%;
 }
 
 .host-info img {
@@ -55,7 +55,7 @@
 }
 
 .rating-stars img {
-    padding-right: 12px;
+    padding-right: 10px;
 }
 
 .description_more {
@@ -73,6 +73,7 @@
 }
 .tag {
     background-color: #FF6060; 
+    font-size: 12px;
     border-radius: 11px;
     color: white;
     font-weight: 600;
@@ -96,6 +97,15 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         margin-top: 30px;
+        align-items: center;
+    }
+
+    .host-name{
+        flex-wrap: wrap;
+    }
+    
+    .rating-stars img {
+        width: 15%;
     }
     .description_more{
         flex-direction: column;
@@ -105,9 +115,7 @@
     .collapse{
         width: 100%;
     }
-    .rating-stars  {
-        width: 90%;
-    }
+
 
     .title-host {
         width: 100%;

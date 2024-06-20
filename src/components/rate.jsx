@@ -8,7 +8,7 @@ const Rating = (props) => {
     const rating = Number(props.rating_number);
 
     return (
-        <div>
+        <div className='rating-stars'>
             {[...Array(5)].map((_, index) =>
                 index < rating ? 
                 <img src={super_star} alt="rating"  key= {index}/> : 

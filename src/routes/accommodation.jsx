@@ -45,18 +45,16 @@ function Accommodation() {
                         <span className='host-name'> {log.host.name}</span> 
                             <img src={log.host.picture} alt={log.host.name} />
                         </div>
-                        <div className='rating-stars'>
                         <Rating rating_number={log.rating} />
-                        </div>
                     </div>
                 </div>
 
                 <div className='description_more'>
                     <Collapse label="Description">
-                        <p>{log.description} </p>
+                        <p className='collapse-content'>{log.description} </p>
                     </Collapse>
                     <Collapse label="Équipements">
-                        <p>{log.equipments}</p>
+                        <p className='collapse-content'>{log.equipments}</p>
                     </Collapse>
                 </div>
             </div>

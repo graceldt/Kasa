@@ -18,9 +18,10 @@ body {
 
 
 .nav-logo {
-  width: 110px;
-  height: 45px;
+  width: 131px;
+  height: 46px;
 }
+
 
 .menu {
   width: 244px;
@@ -36,6 +37,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   text-align: right;
+  padding-right: 3%;
 }
 
 .nav-list a {
@@ -131,13 +133,22 @@ body {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+  .border-page {
+    padding: 3% 3%;
+}
+
   .header-container {
     padding-bottom: 5%;
   }
 
-  .nav-list .active-nav {
-    text-decoration: none !important;
+
+  .nav-list {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    
   }
+
   
   .banner img {
   width: 400px;
@@ -158,7 +169,11 @@ body {
     width: 400px;
   }
 
-  
+  .error-page {
+    min-height: 72vh;
+  }
 
-
+  .main-page{
+    min-height: 72vh;
+  }
 }
