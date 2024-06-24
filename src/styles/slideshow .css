@@ -15,12 +15,14 @@
     position: absolute;
     top: 40%;
     left: 2%;
+
 }
 
 .arrow_next {
     position: absolute;
     top: 40%;
     right: 2%;
+
 }
 
 .slider__number{
@@ -36,4 +38,11 @@
         display: none;
     }
     
+    .arrow_previous {
+        width: 5%;
+    }
+    
+    .arrow_next {
+        width: 5%;
+    }
 }

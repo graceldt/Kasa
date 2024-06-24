@@ -1,39 +1,56 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
 }
 
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+
+
 .border-page {
   padding: 3% 8%;
+  padding-bottom: 20.5rem;
 }
 
 .header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   padding-bottom: 2%;
 }
 
 
 .nav-logo {
-  width: 131px;
-  height: 46px;
+  width: 15%;
+  height: 15%;
 }
 
 
 .menu {
-  width: 244px;
   height: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 10%;
   list-style-type: none;
+  margin: 0;
+}
+
+.nav-bar {
+  width: 100%;
+  vertical-align: middle;
 }
 
 .nav-list {
-  height: 20px;
   text-decoration: none;
   font-size: 20px;
   text-align: right;
@@ -61,6 +78,8 @@ body {
   font-weight: 500;
   line-height: 34px;
   height: 150px;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer-logo {
@@ -91,7 +110,7 @@ body {
   align-items: center;
   position: absolute;
   top: 30%;
-  left: 35%;
+  left: 22%;
   transform: translate(-20%, -50%);
   z-index: 1;
   color: white;
@@ -108,11 +127,13 @@ body {
   width: 100%;
   height: auto;
   padding-bottom: 3%;
+  display: flex;
+  justify-content: center;
 }
 
 .accommodation-card img {
-  height: 320px;
-  width: 320px;
+  height: 30vh;
+  width: 30vh;
   border-radius: 10px;
   margin-top: 10%;
 }
@@ -122,7 +143,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
 }
 
 .nav-list .active-nav {
@@ -134,13 +155,17 @@ body {
 @media (max-width: 767.98px) {
 
   .border-page {
-    padding: 3% 3%;
-}
+    padding: 5% 5%;
+    padding-bottom: 20.5rem;
+  }
+
+  .accommodation-card {
+    gap: 0
+  }
 
   .header-container {
     padding-bottom: 5%;
   }
-
 
   .nav-list {
     text-transform: uppercase;
@@ -149,14 +174,19 @@ body {
     
   }
 
+  .nav-logo {
+    width: 27%;
+    height: 27%;
+  }
+
   
   .banner img {
-  width: 400px;
+  width: 100%;
   height: 7rem;
   }
 
   .banner-title {
-  font-size: 28px;
+  font-size: 24px;
   }
 
   
@@ -164,9 +194,11 @@ body {
     background-color: #fff;
   }
 
+
   .accommodation-card img {
-    height: 320px;
-    width: 400px;
+    height: 60vw;
+    width: 90vw;
+    object-fit: cover;
   }
 
   .error-page {

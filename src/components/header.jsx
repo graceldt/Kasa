@@ -1,7 +1,7 @@
 import logo from '../assets/LOGO.png'
 
 function HeaderApp() {
-    return <header className='header-container ' >
+    return <header className='header-container'>
             <img src={logo} className="nav-logo" alt="logo" />
             <nav className='nav-bar'>
                 <ul className='menu' >
