@@ -35,12 +35,11 @@
 .toggle{
     background-color: #fbfbfb;
     border-radius: 5px;
+    margin: -2px;
+    padding: 15px;
 }
 
-.collapse-content{
-    margin: -2px;
-    padding: 20px;
-}
+
 
 
 /* Small devices (phones, less than 768px) */

@@ -56,7 +56,7 @@ function Accommodation() {
                     <Collapse label="Équipements">
                         {
                             log.equipments.map(equipment => (
-                                <p>{equipment}</p>
+                                <p> {equipment}</p>
                             ))
                         }
                         
