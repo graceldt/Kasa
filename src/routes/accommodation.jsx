@@ -54,7 +54,12 @@ function Accommodation() {
                         <p className='collapse-content'>{log.description} </p>
                     </Collapse>
                     <Collapse label="Équipements">
-                        <p className='collapse-content'>{log.equipments}</p>
+                        {
+                            log.equipments.map(equipment => (
+                                <p>{equipment}</p>
+                            ))
+                        }
+                        
                     </Collapse>
                 </div>
             </div>

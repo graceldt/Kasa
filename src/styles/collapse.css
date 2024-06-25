@@ -3,25 +3,12 @@
     align-items: center;
     flex-direction: column;
     padding-top: 6%;
-    justify-content: space-between;
     gap: 20px; 
 }
 
 .collapse{
     width: 60%;
     
-}
-
-
-.toggle{
-    width: 100%;
-    background-color: #fbfbfb;
-    border-radius: 5px;
-}
-
-.collapse-content{
-    margin: -2px;
-    padding: 20px;
 }
 
 .info-collapse{
@@ -37,14 +24,24 @@
 }
 
 .arrow-collapse{
-    display: flex;
     padding-right: 10px;
-    align-items: center;
 }
 
 .arrow-collapse img {
     width: 15px;
 }
+
+
+.toggle{
+    background-color: #fbfbfb;
+    border-radius: 5px;
+}
+
+.collapse-content{
+    margin: -2px;
+    padding: 20px;
+}
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {

@@ -1,15 +1,12 @@
 
 .title-host{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
 .title{
-    display: flex;
-    flex-direction: column;
     color: #FF6060;
 }
 
@@ -21,6 +18,21 @@
     margin: 0;
     font-size: 18px;
     margin-top: 20px;
+}
+
+.tag-section{
+    margin-top: 20px;
+    
+}
+.tag {
+    background-color: #FF6060; 
+    font-size: 12px;
+    border-radius: 11px;
+    color: white;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 5px 10px 5px 10px;
+    margin-right: 5px;
 }
 
 .host {
@@ -38,16 +50,17 @@
     
 }
 
-.host-name{
-    padding-right: 2%;
-}
-
 .host-info img {
     border-radius: 50%;
     width: 30%;
     vertical-align: middle;
     row-gap: 20px;
 }
+
+.host-name{
+    padding-right: 2%;
+}
+
 
 .rating-stars{
     display: flex;
@@ -67,20 +80,7 @@
     width: 48%;
 }
 
-.tag-section{
-    margin-top: 20px;
-    
-}
-.tag {
-    background-color: #FF6060; 
-    font-size: 12px;
-    border-radius: 11px;
-    color: white;
-    font-weight: 600;
-    line-height: 25px;
-    padding: 5px 10px 5px 10px;
-    margin-right: 5px;
-}
+
 
 
 

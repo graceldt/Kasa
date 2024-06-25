@@ -1,16 +1,19 @@
+import { NavLink } from "react-router-dom";
 import "../styles/card.css";
 
 
-function Card ({title, image, id}){
+function Card({ title, image, id }) {
 
-    return <>
-            <a href={"/accommodation/"+ id} className='card-section'>
-                <article className='card'>
-                    <img src={image} alt={title} />
-                    <p className='card-text'>{title}</p>
-                </article>
-            </a>
-    </>
+    return (
+        <NavLink to={"/accommodation/" + id} className='card-link'>
+            <article className='card'>
+                <img src={image} alt={title} />
+                <p className='card-text'>{title}</p>
+            </article>
+        </NavLink>
+
+    );
+
 }
 
 export default Card;

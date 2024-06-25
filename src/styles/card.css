@@ -1,20 +1,38 @@
-.accommodation-card .card {
+.accommodation {
+    border-radius: 20px;
+    margin-top: 5%;
+    box-sizing: border-box;
+    background-color: #F6F6F6;
+    padding-bottom: 3%;
     display: flex;
-    flex-direction: column;
-    height: 100%;
+}
+
+.accommodation-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.accommodation-card .card-link {
+    width: 25%
+}
+
+.accommodation-card img {
+    height: 30vh;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10%;
+    object-fit: cover;
 }
 
 
 .card {
-    border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card img {
-    width: 50%;
-}
 
-.card-text{
+.card-text {
     position: absolute;
     bottom: 0%;
     text-decoration: none;

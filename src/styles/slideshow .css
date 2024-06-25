@@ -1,3 +1,7 @@
+.slider {
+    position: relative;
+}
+
 .slider__img {
     display: flex;
     justify-content: center;
@@ -8,9 +12,7 @@
 
 }
 
-.slider {
-    position: relative;
-}
+
 .arrow_previous {
     position: absolute;
     top: 40%;

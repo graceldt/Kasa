@@ -34,9 +34,11 @@ body {
   height: 15%;
 }
 
+.nav-bar {
+  width: 100%;
+}
 
 .menu {
-  height: 20px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -45,15 +47,8 @@ body {
   margin: 0;
 }
 
-.nav-bar {
-  width: 100%;
-  vertical-align: middle;
-}
-
 .nav-list {
-  text-decoration: none;
   font-size: 20px;
-  text-align: right;
   padding-right: 3%;
 }
 
@@ -62,10 +57,44 @@ body {
   color: #000000;
 }
 
+.nav-list .active-nav {
+  text-decoration: underline !important;
+  text-underline-offset: 6px;
+}
 
 .main-page {
   min-height: 65vh;
 }
+
+
+
+.banner {
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+}
+
+.banner img {
+  width: 100%;
+  object-fit: cover;
+  height: 12rem;
+  border-radius: 10px;
+  filter: brightness(50%);
+}
+
+.banner-title {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  transform: translate(-20%, -50%);
+  z-index: 1;
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+
+}
+
 
 .footer-container {
   display: flex;
@@ -84,72 +113,11 @@ body {
 
 .footer-logo {
   width: 80px;
-  height: 24px;
+  height: 30px;
   padding-top: 40px;
 }
 
-.banner {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
 
-.banner img {
-  width: 100%;
-  object-fit: cover;
-  height: 12rem;
-  border-radius: 10px;
-  filter: brightness(50%);
-}
-
-.banner-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 30%;
-  left: 22%;
-  transform: translate(-20%, -50%);
-  z-index: 1;
-  color: white;
-  font-size: 48px;
-  font-weight: 700;
-
-}
-
-.accommodation {
-  border-radius: 20px;
-  margin-top: 5%;
-  box-sizing: border-box;
-  background-color: #F6F6F6;
-  width: 100%;
-  height: auto;
-  padding-bottom: 3%;
-  display: flex;
-  justify-content: center;
-}
-
-.accommodation-card img {
-  height: 30vh;
-  width: 30vh;
-  border-radius: 10px;
-  margin-top: 10%;
-}
-
-.accommodation-card {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.nav-list .active-nav {
-  text-decoration: underline !important;
-  text-underline-offset: 6px;
-}
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -159,12 +127,15 @@ body {
     padding-bottom: 20.5rem;
   }
 
-  .accommodation-card {
-    gap: 0
-  }
+  
 
   .header-container {
     padding-bottom: 5%;
+  }
+
+  .nav-logo {
+    width: 27%;
+    height: 27%;
   }
 
   .nav-list {
@@ -174,12 +145,6 @@ body {
     
   }
 
-  .nav-logo {
-    width: 27%;
-    height: 27%;
-  }
-
-  
   .banner img {
   width: 100%;
   height: 7rem;
@@ -189,23 +154,9 @@ body {
   font-size: 24px;
   }
 
-  
-  .accommodation{
-    background-color: #fff;
-  }
-
-
-  .accommodation-card img {
-    height: 60vw;
-    width: 90vw;
-    object-fit: cover;
-  }
-
-  .error-page {
-    min-height: 72vh;
-  }
-
   .main-page{
     min-height: 72vh;
   }
+  
+  
 }
