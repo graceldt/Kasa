@@ -15,7 +15,7 @@
 }
 
 .accommodation-card .card-link {
-    width: 25%
+    width: 25%;
 }
 
 .accommodation-card img {
@@ -41,4 +41,16 @@
     padding-left: 5%;
     line-height: 25px;
     font-size: 15px;
+}
+
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .accommodation-card {
+        background-color: #fff;
+    }
+    .accommodation-card .card-link {
+    width: 90%;
+
+}
 }

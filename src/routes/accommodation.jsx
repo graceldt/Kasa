@@ -1,10 +1,11 @@
 import { useParams, useNavigate } from 'react-router';
+import { useState, useEffect } from 'react';
 import logements from '../data/logement.json'
 import Slideshow from '../components/slideshow ';
 import Collapse from '../components/collapse';
 import "../styles/accomodation.css";
 import Rating from '../components/rate';
-import { useState, useEffect } from 'react';
+
 
 
 
@@ -21,7 +22,7 @@ function Accommodation() {
         if (!foundLogement) {
             Navigate("/logement-non-trouvé")
         }
-    }, [id])
+    }, [id, Navigate])
 
 
 
@@ -55,8 +56,8 @@ function Accommodation() {
                     </Collapse>
                     <Collapse label="Équipements">
                         {
-                            log.equipments.map(equipment => (
-                                <p> {equipment}</p>
+                            log.equipments.map((equipment, i) => (
+                                <p key={i}> {equipment}</p>
                             ))
                         }
                         

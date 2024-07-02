@@ -6,7 +6,7 @@ import Collapse from '../components/collapse';
 function About() {
 
     return <div className='main-page'>
-    <Banner  label="" banner={banner}/>
+    <Banner  banner={banner}/>
     <section className='collapse-section'>
     <Collapse label="Fiabilité">
     <p className='collapse-content'>
